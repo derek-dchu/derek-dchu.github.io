@@ -1,0 +1,21 @@
+# Site settings
+title: Derek Hu's Blog
+email: derek.dchu@gmail.com
+description: copyright © Dicong Hu 
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://derek.me" # the base hostname & protocol for your site
+#twitter_username:
+github_username:  derek-dchu
+
+# Build settings
+markdown: kramdown
+
+# Github Pages settings
+highlighter: pygments
+
+safe: true
+lsi: false
+
+# Personal settings
+author_name: Derek Hu
+author_bio: Developer

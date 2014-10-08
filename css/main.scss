@@ -1,0 +1,140 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Using media queries with like this:
+// @include media-query($palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
+
+
+// my css
+html, body {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+	top: 0;
+}
+
+.page-content {
+	min-height: 55%;
+}
+
+.page-background {
+/** To edit this background, follow this link:
+http://svgeneration.com/generate/Cross-Stripes Grunge?size=10&background=ededed&stripe-width=2&stripe1=e6e6e6&stripe2=e6e6e6&grunge=0.2&
+*/
+background-color: #ededed;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc0MDAnIGhlaWdodD0nNDAwJyB2aWV3Qm94PScwIDAgNDAwIDQwMCc+CjxkZWZzPgoJPHBhdHRlcm4gaWQ9J2JsdWVzdHJpcGUnIHBhdHRlcm5Vbml0cz0ndXNlclNwYWNlT25Vc2UnIHg9JzAnIHk9JzAnIHdpZHRoPScxMCcgaGVpZ2h0PScyMCcgdmlld0JveD0nMCAwIDUgMTAnID4KCQk8cmVjdCB4PSctNScgeT0nLTUnIHdpZHRoPScxNScgaGVpZ2h0PScyMCcgZmlsbD0nI2VkZWRlZCcvPgoJCTxsaW5lIHgxPSctMicgeTE9JzEnIHgyPSc3JyB5Mj0nMTAnIHN0cm9rZT0nI2U2ZTZlNicgc3Ryb2tlLXdpZHRoPScyJy8+CgkJPGxpbmUgeDE9Jy0yJyB5MT0nNicgeDI9JzcnIHkyPScxNScgc3Ryb2tlPScjZTZlNmU2JyBzdHJva2Utd2lkdGg9JzInLz4KCQk8bGluZSB4MT0nLTInIHkxPSctNCcgeDI9JzcnIHkyPSc1JyBzdHJva2U9JyNlNmU2ZTYnIHN0cm9rZS13aWR0aD0nMicvPgoJCTxsaW5lIHgxPSc3JyB5MT0nMScgeDI9Jy0yJyB5Mj0nMTAnIHN0cm9rZT0nI2U2ZTZlNicgc3Ryb2tlLXdpZHRoPScyJy8+CgkJPGxpbmUgeDE9JzcnIHkxPSc2JyB4Mj0nLTInIHkyPScxNScgc3Ryb2tlPScjZTZlNmU2JyBzdHJva2Utd2lkdGg9JzInLz4KCQk8bGluZSB4MT0nNycgeTE9Jy00JyB4Mj0nLTInIHkyPSc1JyBzdHJva2U9JyNlNmU2ZTYnIHN0cm9rZS13aWR0aD0nMicvPgoJPC9wYXR0ZXJuPiAKCTxmaWx0ZXIgaWQ9J2Z1enonIHg9JzAnIHk9JzAnPgoJCTxmZVR1cmJ1bGVuY2UgdHlwZT0ndHVyYnVsZW5jZScgcmVzdWx0PSd0JyBiYXNlRnJlcXVlbmN5PScuMiAuMScgbnVtT2N0YXZlcz0nMicgc3RpdGNoVGlsZXM9J3N0aXRjaCcvPgoJCTxmZUNvbG9yTWF0cml4IHR5cGU9J3NhdHVyYXRlJyBpbj0ndCcgdmFsdWVzPScwLjQnLz4KCQk8ZmVDb252b2x2ZU1hdHJpeCBvcmRlcj0nMywzJyBrZXJuZWxNYXRyaXg9JzAsLS4yNSwwLC0uMjUsMiwtLjI1LDAsLS4yNSwwJy8+Cgk8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2JsdWVzdHJpcGUpJy8+CjxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbHRlcj0ndXJsKCNmdXp6KScgb3BhY2l0eT0nMC4yJy8+Cjwvc3ZnPg==');
+
+
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.sticker {
+	border-radius: 1px 1px 1px 1px;
+	background-color: #fcfcfc;
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
+}
+
+.home {
+	padding: 5%;
+}
+
+.post {
+	padding: 5%;
+}
+
+.post-content {
+	margin-right: 2%;
+}
+
+#right-sidebar {
+	margin-left: 2%;
+	margin-right: 5%;
+}
+
+#blog-author {
+	position: relative;
+}
+
+#blog-author > img {
+	width: 100%;
+}
+
+.widget-body {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	background-color: whitesmoke;
+	margin-top: -20%;
+}
+
+.author-img, .author-img img {
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.author-img {
+	width: 40%;
+	max-width: none;
+	overflow: hidden;
+	background: white;
+	padding: 5px;
+	position: absolute;
+	left: 28%;
+	top: -50%;
+}
+
+.author-bio {
+	padding-top: 25%;
+}
