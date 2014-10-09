@@ -65,11 +65,10 @@ body {
 }
 
 .page-background {
-/** To edit this background, follow this link:
-http://svgeneration.com/generate/Cross-Stripes Grunge?size=10&background=ededed&stripe-width=2&stripe1=e6e6e6&stripe2=e6e6e6&grunge=0.2&
+	/** To edit this background, follow this link:
+http://svgeneration.com/generate/Steel?size=20&top=e1e3e4&bottom=d6d6d6&turbulence=0.3&
 */
-background-color: #ededed;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc0MDAnIGhlaWdodD0nNDAwJyB2aWV3Qm94PScwIDAgNDAwIDQwMCc+CjxkZWZzPgoJPHBhdHRlcm4gaWQ9J2JsdWVzdHJpcGUnIHBhdHRlcm5Vbml0cz0ndXNlclNwYWNlT25Vc2UnIHg9JzAnIHk9JzAnIHdpZHRoPScxMCcgaGVpZ2h0PScyMCcgdmlld0JveD0nMCAwIDUgMTAnID4KCQk8cmVjdCB4PSctNScgeT0nLTUnIHdpZHRoPScxNScgaGVpZ2h0PScyMCcgZmlsbD0nI2VkZWRlZCcvPgoJCTxsaW5lIHgxPSctMicgeTE9JzEnIHgyPSc3JyB5Mj0nMTAnIHN0cm9rZT0nI2U2ZTZlNicgc3Ryb2tlLXdpZHRoPScyJy8+CgkJPGxpbmUgeDE9Jy0yJyB5MT0nNicgeDI9JzcnIHkyPScxNScgc3Ryb2tlPScjZTZlNmU2JyBzdHJva2Utd2lkdGg9JzInLz4KCQk8bGluZSB4MT0nLTInIHkxPSctNCcgeDI9JzcnIHkyPSc1JyBzdHJva2U9JyNlNmU2ZTYnIHN0cm9rZS13aWR0aD0nMicvPgoJCTxsaW5lIHgxPSc3JyB5MT0nMScgeDI9Jy0yJyB5Mj0nMTAnIHN0cm9rZT0nI2U2ZTZlNicgc3Ryb2tlLXdpZHRoPScyJy8+CgkJPGxpbmUgeDE9JzcnIHkxPSc2JyB4Mj0nLTInIHkyPScxNScgc3Ryb2tlPScjZTZlNmU2JyBzdHJva2Utd2lkdGg9JzInLz4KCQk8bGluZSB4MT0nNycgeTE9Jy00JyB4Mj0nLTInIHkyPSc1JyBzdHJva2U9JyNlNmU2ZTYnIHN0cm9rZS13aWR0aD0nMicvPgoJPC9wYXR0ZXJuPiAKCTxmaWx0ZXIgaWQ9J2Z1enonIHg9JzAnIHk9JzAnPgoJCTxmZVR1cmJ1bGVuY2UgdHlwZT0ndHVyYnVsZW5jZScgcmVzdWx0PSd0JyBiYXNlRnJlcXVlbmN5PScuMiAuMScgbnVtT2N0YXZlcz0nMicgc3RpdGNoVGlsZXM9J3N0aXRjaCcvPgoJCTxmZUNvbG9yTWF0cml4IHR5cGU9J3NhdHVyYXRlJyBpbj0ndCcgdmFsdWVzPScwLjQnLz4KCQk8ZmVDb252b2x2ZU1hdHJpeCBvcmRlcj0nMywzJyBrZXJuZWxNYXRyaXg9JzAsLS4yNSwwLC0uMjUsMiwtLjI1LDAsLS4yNSwwJy8+Cgk8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2JsdWVzdHJpcGUpJy8+CjxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbHRlcj0ndXJsKCNmdXp6KScgb3BhY2l0eT0nMC4yJy8+Cjwvc3ZnPg==');
-
+background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMDAnIGhlaWdodD0nMzAwJz4KCTxkZWZzPgoJCTxsaW5lYXJHcmFkaWVudCBpZD0nZycgIHgyPScwJyB5Mj0nMTAwJSc+CgkJCTxzdG9wIG9mZnNldD0nMCUnIHN0eWxlPSdzdG9wLWNvbG9yOiNlMWUzZTQ7c3RvcC1vcGFjaXR5OjEnIC8+CgkJCTxzdG9wIG9mZnNldD0nMTAwJScgc3R5bGU9J3N0b3AtY29sb3I6I2Q2ZDZkNjtzdG9wLW9wYWNpdHk6MScgLz4KCQk8L2xpbmVhckdyYWRpZW50PgoJCTxwYXR0ZXJuIGlkPSdiJyBwYXR0ZXJuVW5pdHM9J3VzZXJTcGFjZU9uVXNlJyB4PScwJyB5PScwJyB3aWR0aD0nMjAnIGhlaWdodD0nMTAnIHZpZXdCb3g9JzAgMCAyMCAxMCcgPgoJCQk8cmVjdCBmaWxsPSd1cmwoI2cpJyB4PSc5JyB5PSctNicgd2lkdGg9JzEyJyBoZWlnaHQ9JzEyJy8+CgkJCTxyZWN0IGZpbGw9J3VybCgjZyknIHg9JzknIHk9JzUnIHdpZHRoPScxMicgaGVpZ2h0PScxMCcvPgoJCQk8cmVjdCBmaWxsPSd1cmwoI2cpJyB3aWR0aD0nMTAnIGhlaWdodD0nMTAnLz4KCQk8L3BhdHRlcm4+IAoJCTxmaWx0ZXIgaWQ9J2Z1enonIHg9JzAnIHk9JzAnPgoJCQk8ZmVUdXJidWxlbmNlIHR5cGU9J3R1cmJ1bGVuY2UnIHJlc3VsdD0ndCcgYmFzZUZyZXF1ZW5jeT0nLjIgLjMnIG51bU9jdGF2ZXM9JzUnIHN0aXRjaFRpbGVzPSdzdGl0Y2gnLz4KCQkJPGZlQ29sb3JNYXRyaXggdHlwZT0nc2F0dXJhdGUnIGluPSd0JyB2YWx1ZXM9JzAnLz4KCQk8L2ZpbHRlcj4KCTwvZGVmcz4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9J3VybCgjYiknLz4KPHJlY3Qgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScgZmlsdGVyPSd1cmwoI2Z1enopJyBvcGFjaXR5PScwLjMnLz4KPC9zdmc+Cg==');
 
 	width: 100%;
 	height: 100%;
@@ -80,9 +79,19 @@ background-color: #ededed;background-image:url('data:image/svg+xml;base64,PHN2Zy
 }
 
 .sticker {
-	border-radius: 1px 1px 1px 1px;
-	background-color: #fcfcfc;
-	box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.15);
+	background: -moz-linear-gradient(top, #fff 0%, #fff 85%, #f9f9f9 100%);
+	background: -webkit-linear-gradient(top, #fff 0%,#fff 85%,#f9f9f9 100%);
+	background: -o-linear-gradient(top, #fff 0%,#fff 85%,#f9f9f9 100%);
+	background: -ms-linear-gradient(top, #fff 0%,#fff 85%,#f9f9f9 100%);
+}
+
+.muted {
+	color: #999;
 }
 
 .home {
@@ -104,6 +113,7 @@ background-color: #ededed;background-image:url('data:image/svg+xml;base64,PHN2Zy
 
 #blog-author {
 	position: relative;
+	padding: 0!important
 }
 
 #blog-author > img {
@@ -137,4 +147,9 @@ background-color: #ededed;background-image:url('data:image/svg+xml;base64,PHN2Zy
 
 .author-bio {
 	padding-top: 25%;
+}
+
+.site-header, .site-footer {
+	background-color: #2d2d2d;
+	color: #ddd;
 }

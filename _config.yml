@@ -1,7 +1,7 @@
 # Site settings
 title: Derek Hu's Blog
 email: derek.dchu@gmail.com
-description: copyright © Dicong Hu 
+description: The contents of this website are © 2014 Dicong Hu 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://derek.me" # the base hostname & protocol for your site
 #twitter_username:
@@ -18,4 +18,4 @@ lsi: false
 
 # Personal settings
 author_name: Derek Hu
-author_bio: Developer
+author_bio: "Love Thinking, Love Hacking, Love NYC<br>I am a full stack developer in New York City"
