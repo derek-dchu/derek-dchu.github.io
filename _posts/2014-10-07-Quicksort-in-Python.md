@@ -98,8 +98,7 @@ def quick_sort(arr, first=None, last=None):
 
 {% endhighlight %}
 
-Think about it
-----
+### What do you think?
 What if we want to return the array in descending order?
 
 [bigO-notation]:	http://en.wikipedia.org/wiki/Big_O_notation
