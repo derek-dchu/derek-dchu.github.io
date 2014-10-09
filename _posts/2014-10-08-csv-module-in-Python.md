@@ -5,16 +5,16 @@ date:	2014-10-08 22:34
 categories:	Python
 ---
 
-CSV (Comma Separated Values) format is the most common import and export format for spreadsheets and databases which is widely used in financial industry or other data driven field. 
+CSV (Comma Separated Values) format is the most common import and export format for spreadsheets and databases which is widely used in financial industry or other data driven field. Here is a simple example about how a table can be represented by CSV:
 
 | Sort Order | Common Name | Formal Name                             | Type              |
 |------------|-------------|-----------------------------------------|-------------------|
 | 1          | Afghanistan | Islamic State of Afghanistan            | Independent State |
 | 2          | Albania     | Republic of Albania                     | Independent State |
 | 3          | Algeria     | People's Democratic Republic of Algeria | Independent State |
+|
 
-For example, above table can be represented as a sequence as follow:
-
+	# equivalent to a table
 	Sort Order,Common Name,Formal Name,Type  
 	1,Afghanistan,Islamic State of Afghanistan,Independent State,  
 	2,Albania,Republic of Albania,Independent State,  
@@ -35,7 +35,7 @@ csv module provides reader and writer objects for controlling read and write seq
 
 This function returns a reader object which will iterate over lines in the given csvfile. Following code shows us how to print out the table in previous section.
 
-{% highlight python %}
+{% highlight python linenos %}
 
 	import csv
 	with open('data.csv', newline='') as csvfile:
@@ -65,7 +65,7 @@ We will have each row within an array with iteams sperated by commas.
 
 This function returns a writer object responsible for converting the user’s data into delimited strings on the given file-like object. Following code shows us how to store above arrays back to a CSV file.
 
-{% highlight python %}
+{% highlight python linenos %}
 
 	import csv
 	with open('data-out.csv', 'wb') as csvfile:
