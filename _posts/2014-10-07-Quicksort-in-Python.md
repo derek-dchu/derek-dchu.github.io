@@ -32,7 +32,7 @@ The goal for paritioning is to divide an array into two sections separated by pi
 6. Move left pointer to right by adding 1, and move right pointer to left by subtracting 1.
 7. If the left pointer is not equal to or larger then right pointer, then go to step 1. Otherwise, swap the first item with item pointing by right pointer, and finish partition.
 
-{% highlight python %}
+{% highlight python linenos %}
 
 def partition(arr, first, last):
 	# step 1
@@ -77,7 +77,7 @@ Quicksort
 ----
 Quicksort is based on the [Divide and Conquer][divide-and-conquer] algorithm design paradigm. Following the Divide and Conquer paradigm, we first partition the whole array, then divide it into a left section and a right section of the pivot item. After that, we recursively partition all sections which produce sub-sections of sections until all those sub-sections contain only no more than one item. Now each item within the array have all  smaller items on their left and larger items on their right, in other words, the array is in ascending order.
 
-{% highlight python %}
+{% highlight python linenos %}
 
 def quick_sort(arr, first=None, last=None):
 	if arr is None:
