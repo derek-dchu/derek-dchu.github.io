@@ -1,6 +1,6 @@
 ---
 layout:	post
-title:	"Quicksort in Python"
+title:	"Quicksort, Python style"
 date:	2014-10-07 21:36
 categories:	Python
 ---
