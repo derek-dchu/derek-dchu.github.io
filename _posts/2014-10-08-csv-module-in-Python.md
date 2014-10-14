@@ -5,7 +5,7 @@ date:	2014-10-08 22:34
 categories:	Python
 ---
 
-CSV (Comma Separated Values) format is the most common import and export format for spreadsheets and databases which is widely used in financial industry or other data driven field. Here is a simple example about how a table can be represented by CSV:
+CSV (Comma Separated Values) format is the most common import and export format for spreadsheets and databases that is widely used in financial industry or other data driven field. Here is a simple example about how a table can be represented by CSV:
 
 | Sort Order | Common Name | Formal Name                             | Type              |
 |------------|-------------|-----------------------------------------|-------------------|
@@ -45,7 +45,7 @@ This function returns a reader object which will iterate over lines in the given
 
 {% endhighlight %}
 
-We will have each row within an array with iteams sperated by commas.
+We will have each row within an array with items separated by commas.
 
 {% highlight python %}
 
