@@ -7,7 +7,7 @@ categories:	Python
 
 When exploring a programming language, it is always a good idea to get familiar with syntax by implementing general data structures and algorithms. Quicksort is one of the best options. It is a practical and widely used sorting algorithm because of its excellent average complexity of [O(n log n)][bigO-notation]. However, we also note that in the worst case, it has O(n^2) complexity, though this behavior is rare.
 
-Quicksort only has two basic operations which are swapping items and partitioning a section of the array. We will first implement these two operations and then put them into our final quicksort function.
+Quicksort only has two basic operations, which are swapping items and partitioning a section of the array. We will first implement these two operations and then put them into our final quicksort function.
 
 Swapping
 ----
@@ -22,7 +22,7 @@ def swap(arr, index1, index2):
 
 Partitioning
 ----
-The goal for paritioning is to divide an array into two sections separated by pivot item, and all items within left section are smaller than pivot item, while the right section contain all the items that are larger than pivot item. Here are basic steps to partition an array:
+The goal for partitioning is to divide an array into two sections separated by pivot item, and all items within left section are smaller than pivot item, while the right section contain all the items that are larger than pivot item. Here are basic steps to partition an array:
 
 1. Pick up a pivot item in the array, then swap it with the first item.
 2. Create two pointers (left and right) at the second and last items in the array respectively.
@@ -75,7 +75,7 @@ def partition(arr, first, last):
 
 Quicksort
 ----
-Quicksort is based on the [Divide and Conquer][divide-and-conquer] algorithm design paradigm. Following the Divide and Conquer paradigm, we first partition the whole array, then divide it into a left section and a right section of the pivot item. After that, we recursively partition all sections which produce sub-sections of sections until all those sub-sections contain only no more than one item. Now each item within the array have all  smaller items on their left and larger items on their right, in other words, the array is in ascending order.
+Quicksort is based on the [Divide and Conquer][divide-and-conquer] algorithm design paradigm. Following the Divide and Conquer paradigm, we first partition the whole array, and then divide it into a left section and a right section of the pivot item. After that, we recursively partition all sections which produce sub-sections of sections until all those sub-sections contain only no more than one item. Now each item within the array has all smaller items on their left and larger items on their right, in other words, the array is in ascending order.
 
 {% highlight python linenos %}
 
