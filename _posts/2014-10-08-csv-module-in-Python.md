@@ -7,12 +7,14 @@ categories:	Python
 
 CSV (Comma Separated Values) format is the most common import and export format for spreadsheets and databases that is widely used in financial industry or other data driven field. Here is a simple example about how a table can be represented by CSV:
 
+{:.pure-table}
 | Sort Order | Common Name | Formal Name                             | Type              |
 |------------|-------------|-----------------------------------------|-------------------|
 | 1          | Afghanistan | Islamic State of Afghanistan            | Independent State |
 | 2          | Albania     | Republic of Albania                     | Independent State |
 | 3          | Algeria     | People's Democratic Republic of Algeria | Independent State |
-|
+
+<br />
 
 	# equivalent to a table
 	Sort Order,Common Name,Formal Name,Type  
