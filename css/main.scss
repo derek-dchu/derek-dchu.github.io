@@ -59,6 +59,10 @@ body {
 	text-shadow: 0 1px 1px rgba(0,0,0,.5);
 }
 
+table {
+	overflow: auto;
+}
+
 .site-title {
 	color: #C2BAAF !important;
 	font-family: 'Arizonia', Arial, sans-serif;
@@ -231,12 +235,20 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
 	.post-content {
 		margin: 0 auto;
 	}
 
 	#right-sidebar {
 		margin: 0 auto;
+	}
+
+	.site-footer {
+		padding: 10px 30px 10px 30px;
+	}
+
+	.site-footer p {
+		margin-top: 0;
 	}
 }
