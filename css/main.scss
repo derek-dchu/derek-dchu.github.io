@@ -51,14 +51,10 @@ $on-laptop:        800px;
 
 
 // my css
-html, body {
-	height: 100%;
-}
 
 body {
 	font-family: 'Whitney SSm A', 'Whitney SSm B', Helvetica, Arial, sans-serif;
 	position: relative;
-	min-height: 100%;
 	top: 0;
 	text-shadow: 0 1px 1px rgba(0,0,0,.5);
 }
@@ -81,9 +77,9 @@ body {
 
 .page-content {
 	position: relative;
-	margin-bottom: 180px;
-	min-height: 100%;
 	z-index: 1;
+	margin-bottom: 180px;
+	min-height: 600px;
 }
 
 .page-background {
