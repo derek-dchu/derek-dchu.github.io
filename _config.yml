@@ -1,7 +1,7 @@
 # Site settings
-title: Derek Hu's Blog
+title: Derek Hu
 email: derek.dchu@gmail.com
-description: The contents of this website are © 2014 Dicong Hu 
+description: Copyright © 2014 Derek Hu. All rights reserved 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://derek.me" # the base hostname & protocol for your site
 #twitter_username:
