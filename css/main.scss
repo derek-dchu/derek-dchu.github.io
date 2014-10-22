@@ -235,8 +235,26 @@ table {
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	.page-content {
+		min-height: 640px;
+	}
 
-@media all and (max-width: 768px) {
+	.site-footer {
+		position: fixed;
+		margin-top: 220px;
+	}
+
+	.site-footer hr {
+		margin: 1em 0;
+	}
+}
+
+
+@media all and (max-width: 767px) {
 	.post-content {
 		margin: 0 auto;
 	}
