@@ -70,7 +70,7 @@ This function returns a writer object responsible for converting the user’s da
 {% highlight python linenos %}
 
 	import csv
-	with open('data-out.csv', 'wb') as csvfile:
+	with open('data-out.csv', 'w', newline='') as csvfile:
 		data_writer = csv.writer(csvfile, delimiter=',')
 		for row in data: # each row is an array
 			data_writer.writerow(row)
